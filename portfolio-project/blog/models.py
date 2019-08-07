@@ -8,6 +8,6 @@ class Blogs(models.Model):
     image = models.ImageField(upload_to='blog_images')
 
     class Meta:
-        ordering = ['-title']
+        ordering = ['-pub_date']
         verbose_name = 'blog'
         verbose_name_plural = 'blogs'
